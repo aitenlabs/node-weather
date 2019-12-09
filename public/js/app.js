@@ -6,14 +6,21 @@ const message2 = document.getElementById("p2")
 const message3 = document.getElementById("p3")
 const message4 = document.getElementById("p4")
 const message5 = document.getElementById("p5")
+const message6 = document.getElementById("p6")
 message1.textContent = ""
 message2.textContent = ""
 message3.textContent = ""
 message4.textContent = ""
 message5.textContent = ""
+message6.textContent = ""
 
 weatherForm.addEventListener("submit", (e) => {
     if (!e) {
+        message2.textContent = ""
+        message3.textContent = ""
+        message4.textContent = ""
+        message5.textContent = ""
+        message6.textContent = ""
         return message1.textContent = e
     }
         
@@ -25,8 +32,13 @@ weatherForm.addEventListener("submit", (e) => {
         res.json().then((data) => {
             if (data.error) {
                 console.log("error >> " + data)
-                message2.textContent= ""
+                
                 message1.textContent = data.error
+                message2.textContent = ""
+                message3.textContent = ""
+                message4.textContent = ""
+                message5.textContent = ""
+                message6.textContent = ""
 
             } else {
                 console.log(data)
@@ -58,12 +70,21 @@ weatherForm.addEventListener("submit", (e) => {
                 var todayHum = `Umidità al ${todayHumidity}%.`
                 var todayForecast = `Al momento ci sono ${currentTemp}° gradi, con ${currentPrecipProbability}% di probabilità di pioggia.`
                 var todayIcon = todayData.icon
+
+                message1.textContent = ""
+                message2.textContent = ""
+                message3.textContent = ""
+                message4.textContent = ""
+                message5.textContent = ""
+                message6.textContent = ""
                 
                 message1.textContent = location
                 message2.textContent = "Sommario del giorno: "
                 message3.textContent = todaySummary
                 message4.textContent = todayForecast
                 message5.textContent = todayHum
+                message6.textContent = `l'icona per questi dati è >> ${todayIcon}`
+
 
             }
         })
