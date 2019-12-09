@@ -1,0 +1,99 @@
+body {
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 980px;
+    min-width: 420px;
+    margin: 0 auto;
+    padding: 0 14px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+footer {
+    color: #999999;
+    padding: 7px 0;
+    margin-top: 70px;
+    border-top: 2px solid #eeeeee;
+}
+
+footer a {
+    color: skyblue;
+    text-decoration: none;
+    margin-right: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    
+}
+
+footer div {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+header {
+    margin-top: 14px;
+    margin-bottom: 49px;
+}
+
+header a {
+    color: #999999;
+    margin-right: 14px;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 56px;
+    margin-bottom: 14px;
+}
+
+.profile {
+    width: 250px;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 14px;
+    min-width: 30vw;
+    margin: 7px 0;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background-color: #888888;
+    color: white;
+    padding: 14px;
+    min-width: 70px;
+    max-width: 10vw;
+    width: 7vw;
+    
+
+}
+
+#p1, #p2, #p3, #p4, #p5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#p2, #p3, #p4, #p5 {
+    font-size: 16px;
+}
+
+#p1 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#p2 {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 42px;
+}
