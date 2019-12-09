@@ -69,9 +69,5 @@ weatherForm.addEventListener("submit", (e) => {
         })
     })
 
-    // function setIcons(icon, iconID) {
-    //     const skycon = new skycons({ color: "white" })
-    //     const currentIcon = 
-    // }
 })
 
